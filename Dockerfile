@@ -1,4 +1,4 @@
 FROM ubuntu:latest
 LABEL authors="Usuario"
-
-ENTRYPOINT ["top", "-b"]
+COPY index.html /usr/share/nginx/html/index.html
+EXPOSE 80
